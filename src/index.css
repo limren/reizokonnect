@@ -1,69 +1,141 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Schibsted Grotesk", sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Macro */
+html,
+body,
+.app {
+  height: 100vh;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  max-width: 100vw;
   min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.app-children {
+  display: flex;
+  flex-direction: column;
+}
+/* Homepage component  */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+@keyframes entrance {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.next-comp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.entrance-1 {
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-name: entrance;
+}
+
+.entrance-2 {
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+  animation-name: entrance;
+}
+/* #71A894 */
+/* Navbar CSS styling */
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.logo {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links {
+  width: 65%;
+  height: 100%;
+}
+
+.nav-links ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.app-children {
+  min-height: 100%;
+}
+
+/* Presentation page */
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  flex: 1;
+}
+
+.presentation-title-section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.presentation-title-section .title {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.presentation-title-section .title h2 {
+  font-size: 2.3vw;
+}
+
+.presentation-title-section .title p {
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.illustration {
+  width: 75vw;
+}
+
+.presentation-illustration {
+  width: 100%;
 }
