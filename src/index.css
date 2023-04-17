@@ -16,12 +16,12 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   background-color: #fff;
-  overflow: hidden;
 }
 
 .app-children {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 /* Homepage component  */
 
@@ -124,7 +124,8 @@ body {
 }
 
 .presentation-title-section .title h2 {
-  font-size: 2.3vw;
+  font-size: 2.5vw;
+  padding-bottom: 15px;
 }
 
 .presentation-title-section .title p {
@@ -133,9 +134,192 @@ body {
 }
 
 .illustration {
-  width: 75vw;
+  width: 55vw;
 }
 
 .presentation-illustration {
   width: 100%;
+}
+
+/* Idea component */
+
+.idea {
+  margin-top: 80px;
+}
+
+.objectif {
+  display: flex;
+  flex-direction: column;
+  background-color: #95d1a9;
+  padding: 68px;
+}
+
+.objectif-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.objectif-card-wrapper:nth-child(2n) {
+  align-self: flex-end;
+}
+
+.objectif-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 105px;
+}
+
+.objectif-text-wrapper h3 {
+  font-size: 2em;
+  padding-bottom: 12px;
+}
+
+.objectif-text-wrapper p {
+  font-size: 1.5em;
+  max-width: 900px;
+}
+.object-img {
+  width: 300px;
+}
+
+.fridge-illustration {
+  width: 190px;
+}
+
+/* Sandbox comp */
+
+.fridge-canvas {
+  width: 600px !important;
+  height: 450px !important;
+}
+
+.sandbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.sandbox-animation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 80px;
+  flex-wrap: wrap;
+}
+
+.faker-phone {
+  position: relative;
+  background: #2d3436;
+  width: calc(76px * 4);
+  height: calc(138px * 4);
+  padding: 60px 15px 70px;
+  border-radius: 35px;
+  box-sizing: border-box;
+}
+.faker-phone::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 6px;
+  border-radius: 3px;
+  background: #000;
+  opacity: 0.7;
+}
+
+.faker-phone::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -22px;
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 100%;
+}
+
+.faker-phone--screen {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: auto;
+  position: relative;
+}
+
+.phone-page-header {
+  margin: 10px;
+}
+
+.phone-page-welcome {
+  color: #5b5b5b;
+  font-size: 19px;
+}
+.phone-page-title {
+  color: white;
+  font-size: 22px;
+}
+.grid-food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-food-items {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grid-food-item {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #101010;
+  margin: 3px;
+  padding: 5px 8px;
+  border-radius: 15px;
+  color: white;
+  font-size: 12px;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.grid-food-item-image {
+  width: 55px;
+}
+
+.empty-fridge {
+  color: white;
+}
+
+.grid-food-header {
+  margin-top: 10px;
+}
+
+.grid-food-header-input {
+  border: none;
+  background-color: #101010;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: white;
+}
+
+.empty-fridge {
+  padding: 8px;
+}
+
+.empty-fridge button {
+  margin-top: 20px;
+  padding: 6px;
 }

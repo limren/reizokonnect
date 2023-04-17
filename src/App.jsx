@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { Navbar } from "./Components/Navbar";
 
 function App({ children }) {
   return (
     <div className='app'>
       <Navbar />
-      <div className='app-children'>{children}</div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div className='app-children'>{children}</div>
+      </Suspense>
     </div>
   );
 }

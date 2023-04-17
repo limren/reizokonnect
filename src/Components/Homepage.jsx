@@ -8,10 +8,10 @@ export const Homepage = () => {
     if (!ref.current) {
       return;
     }
-    ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (
-    <div className='homepage entrance-1'>
+    <div className='homepage'>
       <Presentation />
       <div className='next-comp entrance-2'>
         <h2>En savoir plus !</h2>

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Presentation = () => {
   return (
-    <div className='presentation'>
+    <div className='presentation entrance-1'>
       <div className='presentation-title-section'>
         <div className='title'>
           <h2>Avez-vous déjà été confronté à une telle situation ?</h2>
