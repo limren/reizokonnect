@@ -5,17 +5,27 @@ export const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='logo'>
-        <h2>Reizokonnect</h2>
+        <Link to='/'>
+          <div className='logo-wrapper'>
+            <img src='./assets/logo_reizoko.svg' className='nav-logo' />
+            <h2>REIZOKONNECT</h2>
+          </div>
+        </Link>
       </div>
       <div className='nav-links'>
         <ul>
-          <li>Nos produits</li>
-
+          <Link to='/products'>
+            <li>Nos produits</li>
+          </Link>
           <Link to='/sandbox'>
             <li>Bac à sable</li>
           </Link>
-          <li>La marque</li>
-          <li>Contact</li>
+          <Link to='/brand'>
+            <li>La marque</li>
+          </Link>
+          <Link to='/contact'>
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </div>

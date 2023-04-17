@@ -36,35 +36,35 @@ export const GridFood = () => {
           <img src='./assets/poivron.png' className='grid-food-item-image' />
           <div className='grid-food-item-footer'>
             <p className='grid-food-item-name'>Poivron</p>
-            <p className='grid-food-item-date'>Expiration : 28 Avr.</p>
+            <p className='grid-food-item-date'>Expiration : 11 Mai.</p>
           </div>
         </div>
         <div className='grid-food-item'>
-          <img src='./assets/brocoli.png' className='grid-food-item-image' />
+          <img src='./assets/banane.png' className='grid-food-item-image' />
           <div className='grid-food-item-footer'>
-            <p className='grid-food-item-name'>Brocoli</p>
-            <p className='grid-food-item-date'>Expiration : 28 Avr.</p>
+            <p className='grid-food-item-name'>Banane</p>
+            <p className='grid-food-item-date'>Expiration : 5 Mai.</p>
           </div>
         </div>
         <div className='grid-food-item'>
-          <img src='./assets/brocoli.png' className='grid-food-item-image' />
+          <img src='./assets/carotte.png' className='grid-food-item-image' />
           <div className='grid-food-item-footer'>
-            <p className='grid-food-item-name'>Brocoli</p>
-            <p className='grid-food-item-date'>Expiration : 28 Avr.</p>
+            <p className='grid-food-item-name'>Carotte</p>
+            <p className='grid-food-item-date'>Expiration : 31 Avr.</p>
           </div>
         </div>
         <div className='grid-food-item'>
-          <img src='./assets/brocoli.png' className='grid-food-item-image' />
+          <img src='./assets/tomate.png' className='grid-food-item-image' />
           <div className='grid-food-item-footer'>
-            <p className='grid-food-item-name'>Brocoli</p>
-            <p className='grid-food-item-date'>Expiration : 28 Avr.</p>
+            <p className='grid-food-item-name'>Tomate</p>
+            <p className='grid-food-item-date'>Expiration : 2 Mai.</p>
           </div>
         </div>
         <div className='grid-food-item'>
-          <img src='./assets/brocoli.png' className='grid-food-item-image' />
+          <img src='./assets/salade.png' className='grid-food-item-image' />
           <div className='grid-food-item-footer'>
-            <p className='grid-food-item-name'>Brocoli</p>
-            <p className='grid-food-item-date'>Expiration : 28 Avr.</p>
+            <p className='grid-food-item-name'>Salade</p>
+            <p className='grid-food-item-date'>Expiration : 30 Avr.</p>
           </div>
         </div>
       </div>
