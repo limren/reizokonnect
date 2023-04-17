@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Products = () => {
   return (
@@ -35,6 +36,10 @@ export const Products = () => {
             <p className='product-desc-application'>
               Application disponible sur IOS & Android
             </p>
+            <div className='product-buttons'>
+              <Link to=''>Regarder la démo</Link>
+              <Link to=''>Acheter</Link>
+            </div>
           </div>
         </div>
         <div>

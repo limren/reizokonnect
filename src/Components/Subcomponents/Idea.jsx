@@ -36,13 +36,16 @@ export const Idea = ({ innerRef }) => {
           </div>
         </div>
         <div className='objectif-card-wrapper'>
-          <img src='/assets/phone.svg' className='object-img' />
+          <img src='/assets/food-waste.jpg' className='object-img' />
           <div className='objectif-text-wrapper'>
-            <h3>Accès en temps réel de vos aliments depuis n'importe où</h3>
+            <h3>
+              Limiter le gaspillage d'aliments grâce à votre frigo Reizoko !
+            </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              maxime, consequuntur iste facilis vel eius doloremque pariatur
-              illum, ducimus inventore, eveniet asperiores reiciendis quibusdam
+              L'application fournie gratuitement avec votre frigo vous permet de
+              suivre en temps réel la date d'expiration de vos aliments. Un
+              doute lors de vos courses ? N'achetez pas en deux fois, vérifiez
+              sur votre application !
             </p>
           </div>
         </div>
