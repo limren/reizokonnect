@@ -3,7 +3,7 @@ import React from "react";
 export const Idea = ({ innerRef }) => {
   return (
     <div className='idea' ref={innerRef}>
-      <h1>Reizokonnect, un objectif, le vôtre aussi.</h1>
+      <h1>Reizokonnect le frigo qui sait ce dont vous avez besoin !</h1>
       <div className='objectif'>
         <div className='objectif-card-wrapper'>
           <img
@@ -28,11 +28,7 @@ export const Idea = ({ innerRef }) => {
           />
           <div className='objectif-text-wrapper'>
             <h3>Accès en temps réel de vos aliments depuis n'importe où</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              maxime, consequuntur iste facilis vel eius doloremque pariatur
-              illum, ducimus inventore, eveniet asperiores reiciendis quibusdam
-            </p>
+            <p>Vos courses</p>
           </div>
         </div>
         <div className='objectif-card-wrapper'>
@@ -43,9 +39,8 @@ export const Idea = ({ innerRef }) => {
             </h3>
             <p>
               L'application fournie gratuitement avec votre frigo vous permet de
-              suivre en temps réel la date d'expiration de vos aliments. Un
-              doute lors de vos courses ? N'achetez pas en deux fois, vérifiez
-              sur votre application !
+              suivre en temps réel la date d'expiration de vos aliments.
+              N'achetez pas en deux fois, vérifiez sur votre application !
             </p>
           </div>
         </div>

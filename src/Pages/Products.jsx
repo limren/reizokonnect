@@ -37,7 +37,7 @@ export const Products = () => {
               Application disponible sur IOS & Android
             </p>
             <div className='product-buttons'>
-              <Link to=''>Regarder la démo</Link>
+              <Link to='/sandbox'>Regarder la démo</Link>
               <Link to=''>Acheter</Link>
             </div>
           </div>
