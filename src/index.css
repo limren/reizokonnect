@@ -11,6 +11,12 @@
   cursor: pointer;
 }
 
+.objectif,
+.product,
+.sandbox {
+  padding-bottom: 70px !important;
+}
+
 html,
 body,
 .app {
