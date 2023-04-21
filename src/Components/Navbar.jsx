@@ -7,7 +7,7 @@ export const Navbar = () => {
       <div className='logo'>
         <Link to='/'>
           <div className='logo-wrapper'>
-            <img src='./assets/logo_reizoko.svg' className='nav-logo' />
+            <img src='./assets/logo_reizoko.png' className='nav-logo' />
             <h2>REIZOKONNECT</h2>
           </div>
         </Link>
