@@ -12,15 +12,7 @@ export const Homepage = () => {
   };
   return (
     <div className='homepage'>
-      <Presentation />
-      <div className='next-comp entrance-2'>
-        <h2>En savoir plus !</h2>
-        <img
-          src='/assets/arrow.svg'
-          className='arrow'
-          onClick={() => scrollToBottom(goNext)}
-        />
-      </div>
+      <Presentation goNext={goNext} scrollToBottom={scrollToBottom} />
       <Idea innerRef={goNext} />
     </div>
   );

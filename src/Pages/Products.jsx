@@ -17,22 +17,19 @@ export const Products = () => {
           <div className='product-desc-wrapper'>
             <h2>Le frigo Reizoko</h2>
             <p className='product-desc'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-              numquam nemo reprehenderit fugiat animi, magnam ducimus vitae
-              rerum quis iste commodi! Minima temporibus iste veritatis
-              voluptatem maiores quia quibusdam hic nihil nisi quis, sed unde
-              amet cumque numquam, dolore eveniet animi dicta iure a suscipit
-              mollitia similique earum. Ipsum officia exercitationem quo placeat
-              molestias necessitatibus rerum tempora minus iste quod sequi fugit
-              qui nulla nisi veniam dolorum, accusantium illo iusto nostrum eius
-              libero esse aperiam. Rem architecto aut exercitationem sapiente
-              harum quo, iste aspernatur quas magni rerum ad, accusamus tempora,
-              dolorem vitae minus beatae! Quo amet iste eum qui totam
-              consequatur, voluptates dolor consequuntur eaque, aperiam quam
-              repudiandae, modi harum alias dignissimos ab facere laborum nihil!
-              Quia harum est modi.
+              Reizoko, un frigo écoresponsable, assemblé à partir de matérieux
+              écologiques et durables, tels que l'acier inoxydable recyclé et de
+              panneaux isolants en mousse polyuréthane. Egalement, il est équipé
+              de système de refroidissement efficace. De plus, il est équipé
+              d'un système de gestion de l'énergie intelligent qui ajuste la
+              température en fonction du contenu et de l'utilisation. C'est
+              également un frigo révolutionnaire technologiquement, il est
+              équipé d'un scanner de codes-barres pour permettre à l'utilisateur
+              de suivre facilement les dates de péremption et de gérer le stock
+              de nourriture. Les informations sont automatiquement importées sur
+              une application gratuite, fournie avec le frigo.
             </p>
-            <p className='product-price'>299€ TTC</p>
+            <p className='product-price'>1099€ TTC</p>
             <p className='product-desc-application'>
               Application disponible sur IOS & Android
             </p>

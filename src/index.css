@@ -65,9 +65,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 7vw;
+  padding-top: 50px;
 }
-.next-comp h2 {
+.next-comp h3 {
   font-size: 20px;
 }
 .entrance-1 {
@@ -143,7 +143,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding-top: 10px;
+  padding-top: 80px;
   flex: 1;
 }
 
@@ -453,6 +453,11 @@ body {
   flex-direction: row;
   align-items: center;
 }
+
+.product-buttons-home {
+  padding-top: 30px;
+}
+.product-buttons-home a,
 .product-buttons a {
   text-decoration: none;
   padding: 10px;
@@ -464,7 +469,7 @@ body {
 .product-buttons a:last-of-type {
   margin-left: 20px;
 }
-
+.product-buttons-home a:hover,
 .product-buttons a:hover {
   background-color: #101010;
   color: white;
@@ -531,10 +536,204 @@ body {
     flex-direction: column;
     min-width: 5900px;
   }
+  .brand-text {
+    min-width: 80%;
+  }
+  .products-wrapper {
+    padding-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 1490px) {
   .illustration {
     min-width: 660px;
   }
+}
+
+/* Brand component */
+
+section {
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.brand {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brand-company,
+.brand-team {
+  padding: 0;
+}
+.brand-team-desc {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f7f5;
+}
+.brand-team-desc h2 {
+  padding-bottom: 50px;
+}
+.brand-team-desc ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-top: 50px;
+}
+.ceo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-team-desc ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 80px;
+}
+.job-pre h4 {
+  padding-top: 0.5rem;
+}
+.job-pre p {
+  font-size: 15px;
+}
+
+.brand-team-desc ul li img {
+  width: 180px;
+  height: 200px;
+  object-fit: cover;
+}
+.ceo img {
+  width: 200px;
+  object-fit: cover;
+  height: 180px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding-left: 50px;
+}
+
+.brand-text p {
+  padding-top: 28px;
+}
+
+.brand-topo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.brand-topo p {
+  padding-top: 28px;
+}
+
+.brand-company-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-company-text .brand-company-text-title {
+  align-self: flex-start;
+}
+
+section.brand-vision {
+  padding-top: 80px;
+}
+.brand-vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.meeting {
+  padding-top: 50px;
+  width: 500px;
+}
+.brand-informations {
+  padding-top: 80px;
+}
+
+.brand-clients {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-informations-text {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-informations-text p {
+  padding-top: 25px;
+  width: 90%;
+}
+
+.brand-team-desc .team-desc {
+  padding-top: 50px;
+  text-align: center;
+  width: 50%;
+}
+
+/* Contact comp */
+
+.contact {
+  padding-top: 180px;
+}
+.contact-info {
+  text-align: center;
+}
+.contact-info h4 {
+  padding-top: 15px;
+}
+form {
+  display: flex;
+  padding-top: 38px;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
 }

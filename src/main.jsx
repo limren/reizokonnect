@@ -8,6 +8,7 @@ import { Sandbox } from "./Components/Sandbox";
 import { Canvas } from "@react-three/fiber";
 import { Products } from "./Pages/Products";
 import { Brand } from "./Pages/Brand";
+import { Contact } from "./Pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/brand",
     element: <App children={<Brand />} />,
+  },
+  {
+    path: "/contact",
+    element: <App children={<Contact />} />,
   },
 ]);
 
