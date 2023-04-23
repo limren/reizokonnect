@@ -815,4 +815,7 @@ input[type="submit"] {
     margin: 40px;
     text-align: center;
   }
+  .brand-team-desc .team-desc {
+    width: 100%;
+  }
 }
