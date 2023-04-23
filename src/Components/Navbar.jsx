@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = ({ responsive, setResponsive }) => {
   return (
     <div className='navbar'>
       <div className='logo'>
@@ -12,18 +12,25 @@ export const Navbar = () => {
           </div>
         </Link>
       </div>
-      <div className='nav-links'>
+      <div className='menu'>
+        <img
+          className={`${responsive ? "menu-img" : "close-img"}`}
+          src={`./assets/${responsive ? "menu" : "close"}.svg`}
+          onClick={() => setResponsive(!responsive)}
+        />
+      </div>
+      <div className={`nav-links ${responsive ? "none" : ""}`}>
         <ul>
-          <Link to='/products'>
+          <Link to='/products' onClick={() => setResponsive(!responsive)}>
             <li>Nos produits</li>
           </Link>
-          <Link to='/sandbox'>
+          <Link to='/sandbox' onClick={() => setResponsive(!responsive)}>
             <li>Bac à sable</li>
           </Link>
-          <Link to='/brand'>
+          <Link to='/brand' onClick={() => setResponsive(!responsive)}>
             <li>La marque</li>
           </Link>
-          <Link to='/contact'>
+          <Link to='/contact' onClick={() => setResponsive(!responsive)}>
             <li>Contact</li>
           </Link>
         </ul>
